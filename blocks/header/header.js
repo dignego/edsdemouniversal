@@ -25,7 +25,7 @@ export default async function decorate(block) {
   if (resp.ok) {
     const html = await resp.text();
 
-    // decorate nav DOM
+    // decorate nav DOM updating for the new nav
     const nav = document.createElement('nav');
     nav.innerHTML = html;
     decorateIcons(nav);
